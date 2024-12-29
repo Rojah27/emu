@@ -42,32 +42,3 @@
 
 
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-header {
-    background-color: #333;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-}
-main {
-    padding: 2rem;
-}
-section {
-    margin-bottom: 2rem;
-}
-footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 1rem 0;
-}
