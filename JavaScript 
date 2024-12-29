@@ -1,0 +1,3 @@
+document.querySelector('header').addEventListener('mouseover', () => {
+    alert('Welcome to My Multimedia Blog!');
+});
