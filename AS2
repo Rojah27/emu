@@ -1,1 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech World - One Page Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            margin-top: 10px;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            scroll-behavior: smooth;
+        }
+        nav ul li a:hover {
+            background: #444;
+            border-radius: 4px;
+        }
+        main {
+            padding: 30px 10%;
+        }
+        section {
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #1455a2;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 1.5%;
+            border-radius: 8px;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            padding: 10px 20px;
+            background: #1455a2;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #0e3a73;
+        }
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        @media (max-width: 768px) {
+            main {
+                padding: 20px 2%;
+            }
+            .gallery img {
+                width: 95%;
+                margin: 2% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tech World</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to Tech World! Stay updated with cutting-edge inventions and trends in the world of technology.</p>
+            <img src="images/tech_home.jpg" alt="Technology Overview" style="width:100%;max-width:400px;">
+            <h3>Featured Video</h3>
+            <video controls width="400">
+                <source src="media/tech_intro.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>Listen to Our Tech Podcast</h3>
+            <audio controls>
+                <source src="media/tech_podcast.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
 
+        <!-- About Us Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Tech World is dedicated to sharing the latest information and trends in technology.</p>
+            <img src="images/about_us.jpg" alt="About Us" style="width:100%;max-width:400px;">
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Tech news and updates</li>
+                <li>Product reviews</li>
+                <li>Online tech seminars</li>
+                <li>Consultancy services</li>
+            </ul>
+            <img src="images/services.jpg" alt="Services" style="width:100%;max-width:400px;">
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <img src="images/gallery1.jpg" alt="Gallery 1">
+            <img src="images/gallery2.jpg" alt="Gallery 2">
+            <img src="images/gallery3.jpg" alt="Gallery 3">
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" required></textarea><br>
+                <button type="submit">Send</button>
+            </form>
+            <img src="images/contact.jpg" alt="Contact" style="width:100%;max-width:400px;">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tech World</p>
+    </footer>
+</body>
+</html>
